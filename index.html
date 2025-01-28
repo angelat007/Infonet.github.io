@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de servicio de formación personal</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="styles icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be56e166748641.5b20da8216d2f.jpg">
+</head>
+<body>
+        <p class="fecha"><label for="start" style="color: rgb(14, 90, 206);">Fecha</label><br>
+            <input class="" type="date" id="start" name="trip-start" min="1991-01-01" max="2024-12-31" /></p>
+    <header class="logo">
+        <img class="logoinfonet" src="logo-infotep.png" width="300" alt="logoinfotep">
+    </header>
+    <main>
+        <h2 style="color: rgb(14, 90, 206);">SOLICITUD DE SERVICIO DE FORMACION PROFESIONAL</h2>
+        <form action="submit_form.php" method="POST"> 
+            <p class="datos-de-servicio"><strong>DATOS DEL SERVICIO</strong></p>   
+        
+        <strong>
+          <h6>
+            <label for="horario">HORARIO DISPONIBLE</label><br>
+            <label for="SERVICIO/CURSO SOLICITADO">SERVICIO/CURSO SOLICITADO</label>
+            <input type="text" id="SERVICIO/CURSO SOLICITADO" name="SERVICIO/CURSO SOLICITADO" required /><br><br>
+            <input type="checkbox" id="manana" name="horario[]" value="mañana">
+            <label for="manana">MAÑANA</label>
+            <input type="checkbox" id="tarde" name="horario[]" value="tarde">
+            <label for="tarde">TARDE</label>
+            <input type="checkbox" id="noche" name="horario[]" value="noche">
+            <label for="noche">NOCHE</label>
+            <input type="checkbox" id="sabado" name="horario[]" value="sabado">
+            <label for="sabado">SÁBADO</label>
+            <input type="checkbox" id="domingo" name="horario[]" value="domingo">
+            <label for="domingo">DOMINGO</label><br><br>
+
+            <p class="datos-personales"><strong>DATOS PERSONALES</strong></p>
+
+            
+            <label for="apellidos">APELLIDOS</label>
+            <input type="text" id="apellidos" name="apellidos" required /><br><br>
+            <label for="nombres">NOMBRES</label>
+            <input type="text" id="nombres" name="nombres" required /><br><br>
+            <label for="CEDULA O PASAPORTE">CEDULA O PASAPORTE</label>
+            <input type="text" id="CEDULA O PASAPORTE" name="CEDULA O PASAPORTE" required /><br><br>
+            
+            <label for="sexo">SEXO</label>
+            <input type="radio" id="sexo_m" name="sexo" value="M" required>
+            <label for="sexo_m">M</label>
+            <input type="radio" id="sexo_f" name="sexo" value="F">
+            <label for="sexo_f">F</label><br><br>
+
+            
+            <label for="estado_civil">ESTADO CIVIL</label>
+            <input type="radio" id="soltera" name="estado_civil" value="Soltera" required>
+            <label for="soltera">SOLTERA</label>
+            <input type="radio" id="casado" name="estado_civil" value="Casado/a">
+            <label for="casado">CASADO/A</label>
+            <input type="radio" id="divorciado" name="estado_civil" value="Divorciado/a">
+            <label for="divorciado">DIVORCIADO/A</label>
+            <input type="radio" id="union_libre" name="estado_civil" value="Unión libre">
+            <label for="union_libre">UNION LIBRE</label><br><br>
+
+            
+            <label for="direccion">DIRECCION</label>
+            <input type="text" id="direccion" name="direccion" required /><br><br>
+            <label for="telefono">TELEFONOS</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Residencial, Móvil, Otro" required /><br><br>
+
+            
+            <label for="discapacidad">¿USTED ES UNA PERSONA DISCAPACITADA?</label>
+            <input type="radio" id="discapacidad_si" name="discapacidad" value="SI">
+            <label for="discapacidad_si">SI</label>
+            <input type="radio" id="discapacidad_no" name="discapacidad" value="NO">
+            <label for="discapacidad_no">NO</label><br><br>
+            <label for="discapacidad">EN CASO AFIRMATIVO, ESPECIFIQUE CUAL:</label><br>
+            <input type="radio" id="AUDITIVA" name="AUDITIVA" value="AUDITIVA">
+            <label for="AUDITIVA">AUDITIVA</label>
+            <input type="radio" id="MOTRIZ" name="MOTRIZ" value="MOTRIZ">
+            <label for="MOTRIZ">MOTRIZ</label><br><br>
+            <input type="radio" id="VISUAL" name="VISUAL" value="VISUAL">
+            <label for="VISUAL">VISUAL</label>
+            <input type="radio" id="INTELECTUAL" name="INTELECTUAL" value="INTELECTUAL">
+            <label for="INTELECTUAL">INTELECTUAL</label><br><br>
+            
+
+           <!---datos educacionales-->
+            <p class="datos-educacionales"><strong>DATOS EDUCACIONALES</strong></p>
+            <label for="estudia">ESTUDIA EN LA ACTUALIDAD</label><br>
+            <input type="radio" id="estudia_si" name="estudia" value="SI">
+            <label for="estudia_si">SI</label>
+            <input type="radio" id="estudia_no" name="estudia" value="NO">
+            <label for="estudia_no">NO</label><br><br>
+            <label for="En que horario:">EN CASO DE QUE SI, En que horario:   </label>
+            <input type="text" id="En que horario:" name="En que horario:" required /><br><br>
+
+            <label for="nivel_educacion">NIVEL DE EDUCACION</label><br>
+            <input type="radio" id="sabe_leer" name="nivel_educacion" value="Sabe leer y escribir">
+            <label for="sabe_leer">Sabe leer y escribir</label><br>
+            <input type="radio" id="educacion_basica" name="nivel_educacion" value="Educación básica">
+            <label for="educacion_basica">Educación básica</label><br>
+            <input type="radio" id="educacion_media" name="nivel_educacion" value="Educación media">
+            <label for="educacion_media">Educación media</label><br>
+            <input type="radio" id="universidad_incompleta" name="nivel_educacion" value="Universidad incompleta">
+            <label for="universidad_incompleta">Universidad incompleta</label><br>
+            <input type="radio" id="universidad_completa" name="nivel_educacion" value="Universidad completa">
+            <label for="universidad_completa">Universidad completa</label><br><br>
+
+            <!---datos laborales-->
+            <p class="datos-laborales"><strong>DATOS LABORALES</strong></p>
+            <label for="situacion_laboral">SITUACION LABORAL</label><br>
+            <input type="radio" id="empleado" name="situacion_laboral" value="Empleado">
+            <label for="empleado">Empleado</label>
+            <input type="radio" id="desempleado" name="situacion_laboral" value="Desempleado">
+            <label for="desempleado">Desempleado</label>
+            <input type="radio" id="buscando_primer_empleo" name="situacion_laboral" value="Buscando primer empleo">
+            <label for="buscando_primer_empleo">Buscando primer empleo</label><br><br>
+
+          
+            <label for="empresa">NOMBRE DE LA EMPRESA</label>
+            <input type="text" id="empresa" name="empresa" /><br><br>
+            <label for="telefono_empresa">TELEFONO</label>
+            <input type="text" id="telefono_empresa" name="telefono_empresa" /><br><br>
+            </h6>
+            </strong>
+
+            <button>
+            Enviar Solicitud
+            </button>
+        </form>
+    </main>
+</body>
+</html>

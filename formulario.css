@@ -1,0 +1,52 @@
+body {
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.fecha {
+    float: right;
+}
+
+h6 {
+    color: rgb(9, 76, 177);
+}
+
+.datos-de-servicio {
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(12, 69, 155);
+    background-color: rgb(12, 69, 155);
+}
+
+.datos-personales {
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(12, 69, 155);
+    background-color: rgb(12, 69, 155);
+}
+
+.datos-educacionales {
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(12, 69, 155);
+    background-color: rgb(12, 69, 155);
+}
+
+.datos-laborales {
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(12, 69, 155);
+    background-color: rgb(12, 69, 155);
+}
+
+button {
+        background-color: rgba(12, 69, 155, 0.575);
+        font-family: "Aharoni", 'Courier New', Courier, monospace;
+        color: white;
+        border: 0px;
+        border-radius: 15px;
+        width: 10%;
+}
